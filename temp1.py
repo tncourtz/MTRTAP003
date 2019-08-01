@@ -22,6 +22,9 @@ GPIO.setup(13, GPIO.OUT) # configures GPIO 13 to output
 GPIO.setup(15, GPIO.OUT) # configures GPIO 15 to output 
 GPIO.setup(16, GPIO.IN, pull_up_down=GPIO.PUD_UP) # configures GPIO 16 to input, with pull up resistor
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP) # configures GPIO 18 to input, with pull up resistor
+GPIO.output(11, 0) #initialize the gpio with output low
+GPIO.output(13, 0)
+GPIO.output(15, 0)
 
 #mycallback for interuption
 def my_callback(channel):
